@@ -8,11 +8,7 @@ LABEL PROJECT_REPO_URL         = "git@github.com:datawire/hello-kubernetes.git" 
 
 WORKDIR /service
 COPY requirements.txt .
-
-# Install application dependencies
 RUN pip install -r requirements.txt
-
-# COPY the app code and configuration into place then perform any final configuration steps.
 COPY . ./
 
 EXPOSE 5000
