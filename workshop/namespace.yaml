@@ -1,0 +1,16 @@
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: tutorial
+
+---
+kind: ResourceQuota
+metadata:
+  name: quota
+  namespace: tutorial
+spec:
+  hard:
+    cpu: "20"
+    memory: 1Gi
+    pods: "10"
