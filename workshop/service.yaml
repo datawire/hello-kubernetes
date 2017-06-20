@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-kubernetes
+  namespace: tutorial
+spec:
+  type: LoadBalancer
+  selector:
+    app: hello-kubernetes
+  ports:
+  - port: 80
+    targetPort: http-api
