@@ -7,6 +7,24 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 
+# ----------------------------------------------------------------------------------------------------------------------
+# SUPPLEMENTAL CODE
+# ----------------------------------------------------------------------------------------------------------------------
+
+# @app.route("/quote", methods=["GET"])
+# def hello_with_quote():
+#     import urllib.request
+#     import json
+#
+#     res = urllib.request.urlopen("http://qotm.tutorial")
+#     data = res.read()
+#
+#     return jsonify(message="Hello from Kubernetes!",
+#                    quote=json.loads(data.decode('utf-8')),
+#                    hostname=os.getenv("HOSTNAME"),
+#                    time=datetime.datetime.now().isoformat())
+
+
 @app.route("/", methods=["GET"])
 def hello():
     return jsonify(message="Hello from Kubernetes!",
