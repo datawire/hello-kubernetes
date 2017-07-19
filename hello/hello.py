@@ -16,7 +16,7 @@ app = Flask(__name__)
 #    import urllib.request
 #    import json
 #
-#    res = urllib.request.urlopen("http://qotm.tutorial")
+#    res = urllib.request.urlopen("http://qotm")
 #    data = res.read()
 #
 #    return jsonify(message="Hello from Kubernetes!",
